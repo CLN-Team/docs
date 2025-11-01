@@ -116,6 +116,7 @@ export default defineConfig({
       options: {
         appId: '86ULCY4WRJ',
         apiKey: '6c3a4b9cb40e858e67f0fe2eae0873df',
+        askAi: { assistantId: 'rKeArHN3QqlG' },
         indexName: 'cln_doc_pages',
             placeholder: '搜索文档',
             translations: {
