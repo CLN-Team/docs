@@ -107,7 +107,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/CLN-Team/docs/edit/main/docs/:path',
+      pattern: 'https://github.com/CLN-Team/docs/edit/main/:path',
       text: '在 GitHub 上编辑此文件'
     },
 
@@ -187,6 +187,13 @@ export default defineConfig({
     footer: {
       message: '<a href="https://docs.adclosenn.top/sitemap.xml" target="_blank">Sitemap</a> &nbsp;|&nbsp; <a href="https://docs.adclosenn.top/feed.rss" target="_blank">RSS Feed</a><br>CLN Docs <a href="https://github.com/CLN-Team/docs" target="_blank">Open Source</a> on GitHub.',
       copyright: 'Copyright <span style="font-family:MiSans">©</span> 2025-present <a href="https://github.com/Ad-closeNN" target="_blank">Ad_closeNN</a>.'
+    },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
     }
   }
 })
