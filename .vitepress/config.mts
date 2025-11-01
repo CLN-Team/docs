@@ -21,7 +21,7 @@ export default defineConfig({
   title: "CLN Docs",
   base: '/',
   description: "CLN 文档",
-  lang: 'zh-CN',
+  lang: 'en-US',
   cleanUrls: true,
   metaChunk: true,
   lastUpdated: true,
@@ -115,7 +115,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: '86ULCY4WRJ',
-        apiKey: '6c3a4b9cb40e858e67f0fe2eae0873df',
+        apiKey: '5fec8fa3b31c867578cd00d189ef136f',
         askAi: { assistantId: 'rKeArHN3QqlG' },
         indexName: 'cln_doc_pages',
             placeholder: '搜索文档',
