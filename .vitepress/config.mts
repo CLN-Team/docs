@@ -23,7 +23,6 @@ export default defineConfig({
   description: "CLN 文档",
   lang: 'en-US',
   cleanUrls: true,
-  metaChunk: true,
   lastUpdated: true,
   appearance: true,
   sitemap: { hostname: 'https://docs.adclosenn.top' },
@@ -117,7 +116,7 @@ export default defineConfig({
         appId: '86ULCY4WRJ',
         apiKey: '5fec8fa3b31c867578cd00d189ef136f',
         askAi: { assistantId: 'rKeArHN3QqlG' },
-        indexName: 'cln_doc_pages',
+        indexName: 'cln_docs_pages',
             placeholder: '搜索文档',
             translations: {
               button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
