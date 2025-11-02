@@ -21,7 +21,7 @@ export default defineConfig({
   title: "CLN Docs",
   base: '/',
   description: "CLN 文档",
-  lang: 'en-US',
+  lang: 'zh-CN',
   cleanUrls: true,
   lastUpdated: true,
   appearance: true,
