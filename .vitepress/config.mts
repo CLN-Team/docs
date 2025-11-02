@@ -57,7 +57,12 @@ export default defineConfig({
       { 
         text: '类别',
         items: [
-          { "text": 'CLN API', link: '/docs/cln-api/' }
+          { "text": '类别', link: '/docs/'},
+          { "text": '----------', link: '#' },
+          { "text": 'CLN API', link: '/docs/cln-api/' },
+          { "text": 'Ad_closeNN 的小站', link: '/docs/blog/' },
+          { "text": 'CLN Services 状态', link: '/docs/status/' },
+          { "text": 'CLN Services 状态 (旧版)', link: '/docs/status-old/' },
         ]
       }
     ],
@@ -70,7 +75,25 @@ export default defineConfig({
         {
           text: '类别',
           items: [
-            { text: 'CLN API', link: '/docs/cln-api/' },
+            { text: 'CLN API',
+              collapsed: true,
+              items: [
+                { text: 'CLN API - 概述', link: '/docs/cln-api/' },
+              ]
+            },
+            { text: 'Ad_closeNN 的小站',
+              collapsed: true,
+              items:[
+                { text: '博客 - 概述', link: '/docs/blog/'}
+              ]
+            },
+            { text: 'CLN Services 状态',
+              collapsed: true,
+              items:[
+                { text: 'CLN 状态 - 概述', link: '/docs/status/'},
+                { text: 'CLN 状态 (旧版) - 概述', link: '/docs/status-old/'}
+              ]
+            },
           ]
         }
       ]
@@ -111,6 +134,7 @@ export default defineConfig({
     },
 
     search: {
+      /*
       provider: 'algolia',
       options: {
         appId: '86ULCY4WRJ',
@@ -184,6 +208,26 @@ export default defineConfig({
             }
           }
       },
+    */
+    provider: 'local',
+    options: {
+        translations: {
+         button: {
+           buttonText: '搜索文档',
+           buttonAriaLabel: '搜索文档'
+         },
+         modal: {
+           noResultsText: '无法找到相关结果',
+           resetButtonTitle: '清除查询条件',
+           footer: {
+             selectText: '选择',
+             navigateText: '切换',
+             closeText: '关闭',
+           }
+         }
+        } 
+    },
+  },
     footer: {
       message: '<a href="https://docs.adclosenn.top/sitemap.xml" target="_blank">Sitemap</a> &nbsp;|&nbsp; <a href="https://docs.adclosenn.top/feed.rss" target="_blank">RSS Feed</a><br>CLN Docs <a href="https://github.com/CLN-Team/docs" target="_blank">Open Source</a> on GitHub.',
       copyright: 'Copyright <span style="font-family:MiSans VF">©</span> 2025-present <a href="https://github.com/Ad-closeNN" target="_blank">Ad-closeNN</a>.'

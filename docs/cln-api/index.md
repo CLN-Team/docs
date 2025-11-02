@@ -1,3 +1,9 @@
 # CLN API
 
-CLN API 由 [FastAPI](https://fastapi.tiangolo.com/zh/) 编写，挂载于 [Vercel](https://vercel.com) Function 中。
+以 [FastAPI](https://fastapi.tiangolo.com/zh/) 作为后端的 API。
+
+- 分类: CLN API
+- 平台: [Vercel Functions](https://vercel.com/docs/functions)
+- 类型: API 后端
+- 语言: Python
+- URL: https://api.adclosenn.top

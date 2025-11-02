@@ -11,8 +11,8 @@ hero:
     alt: Homepage Icon
   actions:
     - theme: brand
-      text: 探索所有分类
-      link: /docs
+      text: 探索所有分类 · Explore All Category
+      link: /docs/
 
 features:
   - title: CLN API
@@ -21,4 +21,3 @@ features:
     details: 还没开始写任何东西！网站是空的！
     link: /docs/cln-api/
 ---
-
